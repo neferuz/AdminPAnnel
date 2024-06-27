@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2E3A59;
+}
+.content-container::-webkit-scrollbar{
+    display: none;
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+.poisk-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 45px;
+    width: 25%;
+    height: 61px;
+}
+
+.poisk-con img {
+    width: 18px;
+    height: 18px;
+}
+
+.poisk-con input {
+    width: 214px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #F4F7FE;
+    padding: 0px 0px 0px 20px;
+}
+
+.poisk-con img:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.analizing {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px 30px 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .analizing {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .poisk-con{
+        display: none;
+    }
+    .poisk-con img:nth-child(4) {
+        width: 20%;
+        height: 40px;
+    }
+}

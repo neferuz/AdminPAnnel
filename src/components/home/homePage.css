@@ -1,0 +1,282 @@
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.block {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 22%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.block h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #202224;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block .icon {
+  width: 50px;
+  height: auto;
+}
+
+.block .value {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.block .description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.chart-container {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .block {
+    flex: 1 1 45%;
+  }
+
+  .static_panel {
+    width: 100%;
+  }
+}
+
+
+span {
+  color: rgb(68, 234, 179);
+  font-weight: 700;
+}
+
+
+.static_panel {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.static_new {
+  width: 70%;
+  height: 410px;
+  border-radius: 30px;
+}
+
+.tariff {
+  margin-left: 30px;
+  width: 30%;
+  display: grid;
+}
+
+.block_tariff {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  height: 90%;
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 20px;
+  background-color: #FFF;
+}
+
+.block_tariff span {
+  color: #202224;
+}
+
+.block_tariff div:nth-child(2) {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.block_tariff h4 {
+  height: 2px;
+  color: #3366FF;
+}
+
+.tariff div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#container {
+  border-radius: 20px;
+}
+.static_panel_2{
+  margin-top: 30px;
+}
+.calculations {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.phone {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.stats .orders,
+.stats .income {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.label {
+  font-size: 12px;
+  color: #95a5a6;
+}
+
+.highcharts-background {
+  background-color: #f5f6fa !important;
+}
+
+.value {
+  font-size: 14px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+#container2{
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: #FFFFFF;
+}
+#container1{
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: #FFFFFF;
+}
+.container1 {
+  width: 100%;
+  margin-left: 0px;
+  background-color: #d4d9e7;
+  height: 230px;
+  border-radius: 30px;
+}
+.dask{
+  width: 70%;
+}
+.highcharts-figure{
+  margin: 20px;
+  margin-left: -5px;
+}
+.best_drive{
+  width: 30%;
+  display: grid;
+  align-items: center;
+}
+.title-con{
+  display: flex;
+  align-items: center;
+}
+
+.title-con div:nth-child(1){
+  width: 70%;
+}
+.title-con div:nth-child(2){
+  width: 30%;
+}
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Располагаем модальное окно по нижнему краю */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .block {
+    flex: 1 1 100%;
+  }
+  .static_new{
+    width: 100%;
+    /* display: none; */
+  }
+  .dask{
+    width: 100%;
+  }
+  .tariff {
+    margin-left: 0;
+    width: 100%;
+    display: none;
+  }
+  .block_tariff{
+    width: 100%;
+  }
+  .best_drive{
+    display: none;
+  }
+}

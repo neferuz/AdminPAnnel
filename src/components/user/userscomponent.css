@@ -1,0 +1,30 @@
+.search {
+    margin-top: 20px;
+  }
+  
+  .search input {
+    width: 100%;
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #5459ea;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .pagination .active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
